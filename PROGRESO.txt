@@ -1,0 +1,2 @@
+Ver porque aparece todo con zoom.
+Analizar de cambiar todo lo px por % 

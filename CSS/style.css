@@ -1,0 +1,355 @@
+body {
+    background-image: url(../Imagenes/BlackAndBlue.jpg); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-attachment: fixed; /* Hace que la imagen de fondo sea estática */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+/* Estilos generales para el navbar fijo */
+.navbar {
+    background-color: transparent;
+    width: 90%;
+    margin-left: 5.5%;
+    margin-top: 1%;
+    top: 0;
+    left: 5%;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the navbar contents horizontally */
+    align-items: center; /* Center the navbar contents vertically */
+    z-index: 1000;
+}
+/* Contenedor para centrar los elementos en el navbar */
+.nav-content {
+    background-color: transparent;    
+    width: 100%; /* Adjust this to match the .image-container if it has a specific width */
+    
+    display: flex;
+    
+    margin-left: 1px;   
+    vertical-align: middle;
+    justify-content: space-between; /* Center the contents */
+}
+
+.image-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center; /* This will center the images in the container */
+    flex-wrap: wrap; /* Allows multiple images to wrap in the container */
+    margin: auto; /* This will center the container itself if it's not full width */
+  }
+
+/* Estilos para el logo */
+.logo img {
+    width: 30%;
+    background-color: transparent;
+    margin-top: 1%;
+}
+
+/* Estilos para la lista de navegación y elementos de la lista */
+.nav-list {
+    margin-top: 1%;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    color: white;
+    transition: color 0.3s;
+    vertical-align: middle;
+    font-family: 'Ciutadella';
+    font-size: 20px;
+}
+@font-face {
+    font-family: 'Ciutadella';
+    font-style: normal;    
+    src:
+      local("Open Sans"),
+      url("/Fuentes/Ciutadella-SemiBold.otf") format("truetype"),
+  }
+
+/* Estilos para los enlaces del navbar */
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+/* Cambiar el color del enlace al pasar el mouse por encima */
+.nav-list a:hover {
+    color: black;
+}
+.nav-list li {
+    margin-right: 20px;
+}
+
+
+
+/* Estilos para el submenu de "Surf Training" */
+.surf-training .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(82,179,200);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 1% 7% 7% 7%;
+}
+
+.surf-training .submenu li {
+    margin-right:1%; /*15px;*/ /* Añade padding a la derecha de cada elemento (ajusta según tus preferencias) */
+    list-style: none; /* Elimina las viñetas */
+}
+
+/* Mostrar el submenu y el símbolo personalizado al pasar el mouse sobre "Surf Training" */
+.surf-training:hover .submenu {
+    display: block;
+}
+
+/* Estilos para el símbolo personalizado */
+.custom-symbol {
+    font-size: 14px; /* Ajusta el tamaño del símbolo según tus preferencias */
+    margin-left: 100%; /* Ajusta el espaciado entre el símbolo y el texto */
+}
+
+/* Estilos para los elementos de la lista en el submenu de "Surf Training" */
+.surf-training .submenu li {
+    padding-right: 15px; /* Añade padding a la derecha de cada elemento (ajusta según tus preferencias) */
+    list-style: none; /* Elimina las viñetas */
+    /* Establecer imagen de fondo para cada elemento */
+    background-image: url('../Imagenes/flecha.png'); /* Ruta de la imagen */
+    background-repeat: no-repeat;
+    background-position: left center; /* Alinea la imagen a la izquierda y al centro */
+    background-size: 30px 25px; /* Tamaño de la imagen (ajusta según tus preferencias) */
+    padding-left: 30px; /* Espaciado a la izquierda para acomodar la imagen (ajusta según tus necesidades) */
+}
+
+/* Estilos para el contenido principal */
+main {
+    background-color: transparent;
+    margin-top: 0; /* Ajusta el margen superior a 0 para que comience desde la parte superior */
+}
+
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    width: 90%;
+    margin-top: 0%;
+    text-align: center;
+}
+
+/* Estilos para la imagen */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50px ;
+    margin-top: 0.5%;
+}
+
+/* Estilos contenedor 1*/
+/* Estilos para el contenedor de la imagen */
+.image-container2 {
+    width: 90%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+/* Estilos para contenedor 2 */
+.image-container2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 200px 200px 200px 200px;
+    margin-top: 10px;
+}
+
+/* Estilos para los enlaces que actúan como botones */
+.imagen-boton {
+    display: inline-block; /* Muestra los enlaces en línea y permite aplicar dimensiones */
+    margin: 0; /* Asegura que no haya margen adicional */
+    padding: 0; /* Asegura que no haya padding adicional */
+    border: none; /* Elimina el borde predeterminado de los enlaces */
+    background: none; /* Elimina el fondo predeterminado */
+    cursor: pointer; /* Cambia el cursor para indicar que se puede clickear */
+}
+
+.imagen-boton img {
+    display: block; /* Asegura que la imagen ocupe todo el espacio del enlace */
+    width: 100%; /* La imagen se escala para llenar el enlace */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 15%;
+    
+}
+
+/* Estilos para el contenedor de las imágenes que actúan como botones */
+.fila-de-imagenes {
+    background-color: transparent;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between; /* Centra las imágenes en el eje horizontal */
+    align-items: center; /* Centra las imágenes en el eje vertical */
+}
+
+/* Ajusta este valor según el espacio que quieras entre los botones */
+.fila-de-imagenes .imagen-boton {
+    background-color: transparent;
+    flex: 90; /* Distribuye el espacio disponible */
+    width: 32%; /* Ajusta el ancho máximo de cada botón */
+    margin: 1%; /* Ajusta el margen si es necesario */
+}
+
+/* Añadir efecto al pasar el mouse por encima */
+.imagen-boton:hover img {
+    transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Efecto suave */
+}
+
+.image-container2 {
+    width: 90%;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center; /* This will center the images in the container */
+    flex-wrap: wrap; /* Allows multiple images to wrap in the container */
+    margin: auto; /* This will center the container itself if it's not full width */
+}
+
+/* Estilos para la imagen */
+.image-container2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+    margin-top: 2%;
+    /*border: 4px solid hsl(205,89%,45%); /* Cambia #FF5733 al color que prefieras */
+}
+.boton-inscribirse {
+    position: absolute;
+    top: 70%;   /* Ajusta estos valores según necesites */
+    left: 50%;
+    width: 40%;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.boton-inscribirse img{
+    border-radius: 40px 40px 40px 40px;
+}
+.boton-inscribirse:hover img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Efecto suave */
+}
+
+
+footer{
+    background-color: black; /* Color de fondo del footer */
+    margin-top: 2%;
+    margin-bottom: 80px;
+    padding: 0.5%;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+}
+.footer-content {
+    width: 90%; /* Ocupa todo el ancho del footer */
+    margin-left: 5%;
+    margin-top: 2%;
+    display: grid;
+    align-items: center;
+    margin-bottom: 3%;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+.boton-Incribirse_Fotter{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+    width: 35%;
+}
+.boton-Incribirse_Fotter img{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.boton-Incribirse_Fotter:hover img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Efecto suave */
+}
+
+
+.footer-contact{
+margin-top: 17.5%;
+
+}
+.Wine_Bar{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.footer-logo img, .Wine_Bar img {
+    width: 40%; /* O un tamaño específico si es necesario */
+    height: auto; /* Ajusta esto según el tamaño deseado */
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-media-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+    gap: 10px;
+    margin-left: 10%;
+    /*justify-content: center; /* Esto centrará los íconos dentro de su celda */
+}
+
+.social-media-icons a img {
+    width: auto;
+    height: 50px;
+}
+.social-media-icons:hover img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Efecto suave */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .social-media-icons a img {
+        height: 20px; /* Nueva altura para dispositivos móviles */
+    }
+    .image-container2 img {        
+        border-radius: 10px;
+    }
+    .image-container img {        
+        border-radius: 10px;
+    }
+    .nav-list {
+        font-size: x-small;
+    }
+    .logo img {
+        width: 50px;
+        background-color: transparent;
+    }
+    .boton-Incribirse_Fotter{
+        width: 50%;
+    }
+    .boton-Incribirse_Fotter img{
+        width: 30%;
+        width: 100%;
+    }
+}
